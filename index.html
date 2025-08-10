@@ -26,7 +26,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/fork_knife_.png">
     <!-- CSS & Fonts -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -44,15 +44,15 @@
             </div>
             <nav>
                 <ul class="unstyled d-flex gap-4 fs-3 roboto menu-bar">
-                    <li><a href="#" aria-level="Open Navigation Home" class="align-center d-block">Home</a></li>
-                    <li><a href="#" aria-level="Open Navigation Menu" class="align-center d-block">Menu</a></li>
-                    <li><a href="#" aria-level="Open Navigation About Us" class="align-center d-block">About</a></li>
-                    <li><a href="#" aria-level="Open Navigation Subscription" class="align-center d-block">Subscription</a></li>
-                    <li><a href="#" aria-level="Open Navigation Help" class="align-center d-block">Help</a></li>
+                    <li><a href="#" aria-level="Open Navigation Home" aria-expanded="true" class="align-center d-block">Home</a></li>
+                    <li><a href="#" aria-level="Open Navigation Menu" aria-expanded="true" class="align-center d-block">Menu</a></li>
+                    <li><a href="#" aria-level="Open Navigation About Us" aria-expanded="true" class="align-center d-block">About</a></li>
+                    <li><a href="#" aria-level="Open Navigation Subscription" aria-expanded="true" class="align-center d-block">Subscription</a></li>
+                    <li><a href="#" aria-level="Open Navigation Help" aria-expanded="true" class="align-center d-block">Help</a></li>
                 </ul>
             </nav>
             <div class="d-flex align-center gap-4 menu-bar">
-                <a href="#" aria-level="View shopping cart"><img src="./assets/images/cart.svg" alt="shopping card icon" class="img-fluid"></a>
+                <a href="#" aria-level="View shopping cart"><span class="one">1</span><img src="./assets/images/cart.svg" alt="shopping card icon" class="img-fluid"></a>
                 <a href="#" aria-level="View bell icon"><img src="./assets/images/bell.svg" alt="bell icon" class="img-fluid"></a>
                 <a href="#" aria-level="Search for food items" class="primary px-5 py-3 rounded fs-3 fw-600 shadow">Register</a>
             </div>
@@ -67,7 +67,7 @@
         <!-- HERO SECTION  -->
         <section class="hero-section bg-primary py-5">
             <div class="container d-flex justify-between hero__container d-flex justify-between">
-                <div class="align-center flex-column">
+                <div class="align-center flex-column wrapper">
 
                     <div class="hero__location d-flex align-center gap-2">
                         <img src="./assets/images/location.svg" alt="location icon">
@@ -103,7 +103,7 @@
                 <div class="right-side d-flex d-block align-center justify-end ">
                     <div class="image-group relative">
                         <img src="./assets/images/right_image.png" alt="Banner Image" class="img-fluid">
-                        <!-- <img src="./assets/images/right_image bg.png" alt="" class="img-fluid"> -->
+                        <img src="./assets/images/right_image bg.png" alt="circle background" class="img-fluid absolute circle-img">
                         <div class="trust__badge"><img src="./assets/images/heart.png" alt="like icon"> People trust us</div>
                     </div>
                 </div>
