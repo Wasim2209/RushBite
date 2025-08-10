@@ -386,6 +386,10 @@ a:hover {
     margin-top: 10rem;
 }
 
+.header ul li:first-child {
+    border-bottom: 4px solid #F1C93B;
+}
+
 .hero-section {
     background-image: linear-gradient(120deg, #fff 50%, #f1ca3b8b);
 }
@@ -492,7 +496,12 @@ a:hover {
     color: #1A5D1A;
     backdrop-filter: blur(5px);
 }
-.image1{right: 50%;z-index: 111;}
+
+.image1 {
+    right: 50%;
+    z-index: 111;
+}
+
 .menu-toggler {
     flex-direction: column;
     padding: 0;
@@ -548,6 +557,15 @@ a:hover {
     padding-inline: 2.3rem;
 }
 
+.Exclusive-menu ul li:nth-child(3){
+    border-right: 1px solid #837575;
+}
+.Exclusive-menu ul li:nth-child(4){
+    border-right: 1px solid #837575;
+}
+.Exclusive-menu ul li:nth-child(5){
+    border-right: 1px solid #837575;
+}
 @media (max-width:567px) {
     .Exclusive-menu .menu-category {
         display: grid;
@@ -821,6 +839,7 @@ footer .forkknife {
     font-weight: 400;
     color: hsla(218, 11%, 38%, 1);
 }
+
 
 .order-btn {
     padding: 10px 15px;
