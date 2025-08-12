@@ -26,37 +26,46 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/fork_knife_.webp">
     <!-- CSS & Fonts -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inder&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header w-100 py-4 fixed z-index">
+    <header class="header py-4 fixed z-index w-100">
         <div class="container d-flex justify-between align-center">
             <div class="d-flex justify-between align-center">
-                <a href="index.html" aria-label="RushBite Home Page"><img src="./assets/images/logo.webp" alt="Rush-Bite Logo" class="img-fluid" /></a>
+                <a href="index.html" aria-label="RushBite Home Page"><img src="./assets/images/logo.webp"
+                        alt="Rush-Bite Logo" class="img-fluid" /></a>
             </div>
             <nav>
                 <ul class="unstyled d-flex gap-4 fs-3 roboto menu-bar">
-                    <li><a href="#" aria-level="Open Navigation Home" aria-expanded="true" class="align-center d-block">Home</a></li>
-                    <li><a href="#" aria-level="Open Navigation Menu" aria-expanded="true" class="align-center d-block">Menu</a></li>
-                    <li><a href="#" aria-level="Open Navigation About Us" aria-expanded="true" class="align-center d-block">About</a></li>
-                    <li><a href="#" aria-level="Open Navigation Subscription" aria-expanded="true" class="align-center d-block">Subscription</a></li>
-                    <li><a href="#" aria-level="Open Navigation Help" aria-expanded="true" class="align-center d-block">Help</a></li>
+                    <li><a href="#" aria-level="Open Navigation Home" aria-expanded="true"
+                            class="align-center d-block">Home</a></li>
+                    <li><a href="#" aria-level="Open Navigation Menu" aria-expanded="true"
+                            class="align-center d-block">Menu</a></li>
+                    <li><a href="#" aria-level="Open Navigation About Us" aria-expanded="true"
+                            class="align-center d-block">About</a></li>
+                    <li><a href="#" aria-level="Open Navigation Subscription" aria-expanded="true"
+                            class="align-center d-block">Subscription</a></li>
+                    <li><a href="#" aria-level="Open Navigation Help" aria-expanded="true"
+                            class="align-center d-block">Help</a></li>
                 </ul>
             </nav>
-            <div class="d-flex align-center gap-4 menu-bar">
-                <a href="#" aria-level="View shopping cart"><span class="one">1</span><img src="./assets/images/cart.svg" alt="shopping card icon" class="img-fluid"></a>
-                <a href="#" aria-level="View bell icon"><img src="./assets/images/bell.svg" alt="bell icon" class="img-fluid"></a>
-                <a href="#" aria-level="Search for food items" class="primary px-5 py-3 rounded fs-3 fw-600 shadow">Register</a>
+            <div class="d-flex align-center gap-4 menu-bar relative">
+                <a href="#" aria-level="View shopping cart"><span class="one primary text-white absolute">1</span><img
+                        src="./assets/images/cart.svg" alt="shopping card icon" class="img-fluid"></a>
+                <a href="#" aria-level="View bell icon"><img src="./assets/images/bell.svg" alt="bell icon"
+                        class="img-fluid"></a>
+                <a href="#" aria-level="Search for food items"
+                    class="primary px-5 py-3 rounded fs-3 fw-600 shadow">Register</a>
             </div>
-            <button class="d-none menu-toggler align-center justify-between ">
+            <button class="d-none menu-toggler align-center justify-between flex-column border-none">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -65,46 +74,51 @@
     </header>
     <main>
         <!-- HERO SECTION  -->
-        <section class="hero-section bg-primary py-5">
+        <section class="hero-section bg-primary">
             <div class="container d-flex justify-between hero__container d-flex justify-between">
-                <div class="align-center flex-column wrapper">
+                <div class="align-center flex-column wrapper pb-4">
 
                     <div class="hero__location d-flex align-center gap-2">
                         <img src="./assets/images/location.svg" alt="location icon">
                         <span class="roboto fs-4">Mangalore</span>
                     </div>
 
-                    <h1 class="roboto display-1 fw-700">Your Cravings, our <br><span
+                    <h1 class="roboto display-1 fw-700 hero-title">Your Cravings, our <br><span
                             class="primary-text">Command.</span></h1>
-                    <p class="hero__description roboto fw-400 fs-3 text-gray">Savor the convenience of culinary magic!
+                    <p class="hero__description roboto fw-400 fs-5 mb-2 text-gray lh">Savor the convenience of culinary
+                        magic!
                         Browse, order, and relish -
                         all in one seamless app.</p>
 
                     <form class="search__form relative">
                         <input type="text" placeholder="Search for food" class="search__input">
-                        <button class="search__button" aria-label="Search">
+                        <button class="search__button absolute border-none d-grid p-item-center primary"
+                            aria-label="Search">
                             <img src="./assets/images/search-thin.svg" alt="search icon">
                         </button>
                     </form>
 
-                    <div class="customers">
-                        <div class="customer__photos">
+                    <div class="customers d-flex align-center gap-3">
+                        <div class="customer__photos d-flex">
                             <img src="./assets/Images/img1.webp" alt="Happy Customer 1">
                             <img src="./assets/Images/img2.webp" alt="Happy Customer 2">
                             <img src="./assets/Images/img3.webp" alt="Happy Customer 3">
                         </div>
                         <div class="customer__info">
-                            <p class="customer__title">Our Happy Customers</p>
-                            <p class="customer__rating">⭐ 4.5 (1.2k reviews)</p>
+                            <p class="fw-600 text-gray">Our Happy Customers</p>
+                            <p class="fw-400 roboto fs-1 text-gray">⭐ 4.5 (1.2k reviews)</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="right-side d-flex d-block align-center justify-end ">
+                <div class="right-side d-flex d-block align-center justify-end">
                     <div class="image-group relative">
-                        <img src="./assets/images/right_image.webp" alt="Banner Image" class="img-fluid">
-                        <img src="./assets/images/right_image bg.webp" alt="circle background" class="img-fluid absolute circle-img">
-                        <div class="trust__badge"><img src="./assets/images/heart.png" alt="like icon"> People trust us</div>
+                        <img src="./assets/images/right_image.webp" alt="Banner Image" class="img-fluid burger-image">
+                        <img src="./assets/images/right_image bg.webp" alt="circle background"
+                            class="img-fluid absolute circle-img">
+                        <div class="trust__badge absolute rounded-pill-1 d-flex align-center gap-2 fw-500 text-green">
+                            <img src="./assets/images/heart.png" alt="like icon"> People trust us
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,19 +131,26 @@
                 <p class="pb-2 fs-4 roboto fw-400">Experience the epitome of luxury dining with our exclusive menu, a
                     carefully curated selection for our discerning patrons</p>
                 <ul class="unstyled d-flex justify-center align-center py-2 pb-4 menu-category">
-                    <li><a href="#" aria-label="Open Navigation All foods" class="align-center d-flex fs-5 fw-400 inter">
-                            <img src="./assets/images/burger_cold.webp" alt="All foods icon" class="img-fluid" />All foods</a>
+                    <li><a href="#" aria-label="Open Navigation All foods"
+                            class="align-center d-flex fs-5 fw-400 inter">
+                            <img src="./assets/images/burger_cold.webp" alt="All foods icon" class="img-fluid" />All
+                            foods</a>
                     </li>
-                    <li><a href="#" aria-label="Open Navigation Pizza" class="d-flex align-center primary rounded-pill fs-5 fw-400 inter">
+                    <li><a href="#" aria-label="Open Navigation Pizza"
+                            class="d-flex align-center primary rounded-pill fs-5 fw-400 inter">
                             <img src="./assets/images/pizza.webp" alt="Pizza icon" class="img-fluid" />Pizza</a></li>
                     <li><a href="#" aria-label="Open Navigation Burger" class="align-center d-flex fs-5 fw-400 inter">
                             <img src="./assets/images/burger.webp" alt="Burger icon" class="img-fluid">Burger</a></li>
                     <li><a href="#" aria-label="Open Navigation Noodels" class="align-center d-flex fs-5 fw-400 inter">
                             <img src="./assets/images/noddle.webp" alt="Noodels icon" class="img-fluid">Noodels</a></li>
-                    <li><a href="#" aria-label="Open Navigation Sandwiches" class="align-center d-flex fs-5 fw-400 inter">
-                            <img src="./assets/images/sandwitch.webp" alt="Sandwiches icon" class="img-fluid">Sandwiches</a></li>
-                    <li><a href="#" aria-label="Open Navigation Fried chicken" class="align-center d-flex fs-5 fw-400 inter">
-                            <img src="./assets/images/fried_chicken.webp" alt="Fried chicken icon" class="img-fluid">Fried Chicken</a></li>
+                    <li><a href="#" aria-label="Open Navigation Sandwiches"
+                            class="align-center d-flex fs-5 fw-400 inter">
+                            <img src="./assets/images/sandwitch.webp" alt="Sandwiches icon"
+                                class="img-fluid">Sandwiches</a></li>
+                    <li><a href="#" aria-label="Open Navigation Fried chicken"
+                            class="align-center d-flex fs-5 fw-400 inter">
+                            <img src="./assets/images/fried_chicken.webp" alt="Fried chicken icon"
+                                class="img-fluid">Fried Chicken</a></li>
                 </ul>
                 <!-- Swiper -->
                 <div class="swiper mySwiper w-100">
@@ -151,8 +172,7 @@
                             <div class="pizza-card">
                                 <img src="./assets/images/veg_corn_pizza.webp" alt="Veg Corn Pizza" class="pizza">
                                 <div class="pizza-title">Veg Corn Pizza</div>
-                                <div class="pizza-desc">Pizza Dough • Pizza Sauce • Cheese • Corn • Vegetables • Herbs •
-                                    Olive Oil</div>
+                                <div class="pizza-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and Spices • Olive Oil </div>
                                 <button class="order-btn primary rounded-pill fs-5 fw-400 inter mt-3">Order Now</button>
                             </div>
                         </div>
@@ -162,7 +182,7 @@
                             <div class="pizza-card">
                                 <img src="./assets/images/margerita_pizza.webp" alt="Margherita Pizza" class="pizza">
                                 <div class="pizza-title">Margherita Pizza</div>
-                                <div class="pizza-desc">Pizza Dough • Pizza Sauce • Cheese • Herbs • Olive Oil</div>
+                                <div class="pizza-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and Spices • Olive Oil </div>
                                 <button class="order-btn primary rounded-pill fs-5 fw-400 inter mt-3">Order Now</button>
                             </div>
                         </div>
@@ -173,8 +193,7 @@
                                 <img src="./assets/images/chicken_tikka_pizza.webp" alt="Chicken Tikka Pizza"
                                     class="pizza">
                                 <div class="pizza-title">Chicken Tikka Pizza</div>
-                                <div class="pizza-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken Tikka • Herbs •
-                                    Olive Oil</div>
+                                <div class="pizza-desc">Pizza Dough • Pizza Sauce • Cheese • Chicken • Vegetables • Herbs and Spices • Olive Oil </div>
                                 <button class="order-btn primary rounded-pill fs-5 fw-400 inter mt-3">Order Now</button>
                             </div>
                         </div>
@@ -185,6 +204,7 @@
                 </div>
             </div>
         </section>
+
         <!-- What We Serve -->
         <section class="What-We-Serve primary-light py-5 pb-4 relative">
             <div class="container d-flex justify-center align-center flex-column roboto text-center">
@@ -233,18 +253,18 @@
         <!-- Download Section -->
         <section class="Download py-5 relative">
             <div class="container d-flex justify-center align-center gap-4 flex-wrap">
-                <!-- Left: Phone Image -->
-                <div class="left-panel d-flex justify-center align-center">
+        <!-- Left: Phone Image -->
+        <div class="left-panel d-flex justify-center align-center">
                     <div class="mobile-circle d-flex justify-center align-center relative">
                         <img src="./assets/images/Ellipse20.webp" alt="ellipse image" class="absolute">
-                        <img src="./assets/images/Ellipse21.webp" alt="ellipse image" class="absolute ellipse">
+                        <img src="./assets/images/Ellipse21.wepb" alt="ellipse image" class="absolute ellipse">
                         <img src="./assets/images/iphone.webp" alt="Mobile App Preview"
                             class="img-fluid mobile-img z-index">
                     </div>
                 </div>
 
-                <!-- Right: Content + Buttons -->
-                <div class="right-panel text-center roboto">
+        <!-- Right: Content + Buttons -->
+        <div class="right-panel text-center roboto">
                     <h1 class="display-2 fw-700 heading-text pb-1">Download our Mobile App</h1>
                     <p class="fs-3 text-gray pb-3">
                         Elevate your dining experience with our mobile app. Download now for easy<br>
@@ -257,7 +277,9 @@
                 </div>
             </div>
         </section>
+
     </main>
+
     <!-- Footer Section -->
     <footer class="footer py-5 primary">
         <div class="container text-center py-5 d-flex flex-column align-center">
@@ -275,10 +297,13 @@
                 <li><a href="#" aria-label="Open Navigation Contact">Contact</a></li>
                 <li><a href="#" aria-label="Open Navigation FAQs">FAQs</a></li>
             </ul>
-            <div class="icons d-flex justify-between">
-                <a href="#" aria-label="Open Navigation to Facebook"><img src="./assets/images/facebook.svg" alt="Open Navigation to Facebook" class="img-fluid"/></a>
-                <a href="#" aria-label="Open Navigation to Twitter"><img src="./assets/images/twitter.svg" alt="Open Navigation to Twitter" class="img-fluid"/></a>
-                <a href="#" aria-label="Open Navigation to Instagram"><img src="./assets/images/instagram.svg" alt="Open Navigation to Instagram" class="img-fluid"/></a>
+            <div class="icons d-flex justify-between align-center pt-2">
+                <a href="#" aria-label="Open Navigation to Facebook"><img src="./assets/images/facebook.svg"
+                        alt="Open Navigation to Facebook" class="img-fluid" /></a>
+                <a href="#" aria-label="Open Navigation to Twitter"><img src="./assets/images/twitter.svg"
+                        alt="Open Navigation to Twitter" class="img-fluid" /></a>
+                <a href="#" aria-label="Open Navigation to Instagram"><img src="./assets/images/instagram.svg"
+                        alt="Open Navigation to Instagram" class="img-fluid" /></a>
             </div>
         </div>
     </footer>
